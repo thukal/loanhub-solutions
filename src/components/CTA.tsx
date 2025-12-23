@@ -12,20 +12,20 @@ const CTA = () => {
       <div className="relative container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            <span className="text-primary-foreground">Ready to Transform Your </span>
-            <span className="text-gradient">Lending Business?</span>
+            <span className="text-primary-foreground">Ready to Streamline Your </span>
+            <span className="text-gradient">Lending Operations?</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Join hundreds of financial institutions that have streamlined their operations with Loan.App. Start your free trial today.
+            Take control of your loan management with Loan.App. Customized to fit your business needs, from customer onboarding to daily collections.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button variant="hero" size="xl">
-              Start Free Trial
+              Get Started
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button variant="heroOutline" size="xl">
-              Schedule Demo
+              Contact Us
             </Button>
           </div>
 

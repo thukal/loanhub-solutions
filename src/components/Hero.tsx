@@ -38,7 +38,7 @@ const Hero = () => {
           <div className="animate-fade-up">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-medium mb-8">
               <Shield className="w-4 h-4" />
-              Trusted by 500+ Financial Institutions
+              Your Complete Lending Operations Platform
             </span>
           </div>
 
@@ -50,32 +50,32 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delay-2">
-            Streamline your lending operations with our comprehensive platform. Manage customers, track routes, handle multiple loan types, and monitor staff expenses—all in one place.
+            Streamline your lending operations with our comprehensive platform. Manage your customers, track collection routes, handle multiple loan types, and monitor staff expenses—all in one powerful system.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">
             <Button variant="hero" size="xl">
-              Start Free Trial
+              Get Started
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button variant="heroOutline" size="xl">
-              Watch Demo
+              Contact Us
             </Button>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-muted/10">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">₹50Cr+</div>
-              <div className="text-sm text-muted-foreground">Loans Managed</div>
+              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">6+</div>
+              <div className="text-sm text-muted-foreground">Loan Types</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">10K+</div>
-              <div className="text-sm text-muted-foreground">Active Customers</div>
+              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">Real-time</div>
+              <div className="text-sm text-muted-foreground">Route Tracking</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">99.9%</div>
-              <div className="text-sm text-muted-foreground">Uptime</div>
+              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">100%</div>
+              <div className="text-sm text-muted-foreground">Customizable</div>
             </div>
           </div>
         </div>
