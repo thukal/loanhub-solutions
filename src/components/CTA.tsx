@@ -16,7 +16,7 @@ const CTA = () => {
             <span className="text-gradient">Lending Business?</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Join hundreds of financial institutions that have streamlined their operations with LoanPro. Start your free trial today.
+            Join hundreds of financial institutions that have streamlined their operations with Loan.App. Start your free trial today.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

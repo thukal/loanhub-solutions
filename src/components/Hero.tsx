@@ -22,7 +22,7 @@ const Hero = () => {
               <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center">
                 <TrendingUp className="w-5 h-5 text-secondary-foreground" />
               </div>
-              <span className="text-xl font-bold text-secondary">LoanPro</span>
+              <span className="text-xl font-bold text-secondary">Loan.App</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
               <a href="#features" className="text-muted-foreground hover:text-secondary transition-colors">Features</a>

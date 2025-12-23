@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center">
                 <TrendingUp className="w-5 h-5 text-secondary-foreground" />
               </div>
-              <span className="text-xl font-bold text-secondary">LoanPro</span>
+              <span className="text-xl font-bold text-secondary">Loan.App</span>
             </div>
             <p className="text-muted-foreground text-sm">
               Complete loan management solution for modern financial institutions.
@@ -51,7 +51,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border/20 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2024 LoanPro. All rights reserved.
+            © 2024 Loan.App. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Twitter</a>
