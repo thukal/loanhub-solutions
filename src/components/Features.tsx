@@ -59,10 +59,10 @@ const Features = () => {
             Loan Types
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Every Loan Type, <span className="text-gradient">One Platform</span>
+            Manage All Your <span className="text-gradient">Loan Products</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            From daily collections to gold loans, manage all your lending products with specialized tools designed for each loan type.
+            From daily collections to gold loans, handle all your lending products with specialized tools designed for each loan type.
           </p>
         </div>
 

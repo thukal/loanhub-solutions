@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-secondary">Loan.App</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Complete loan management solution for modern financial institutions.
+              Complete loan management system customized for your lending business.
             </p>
           </div>
 
