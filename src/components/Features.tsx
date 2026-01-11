@@ -5,64 +5,66 @@ import {
   Landmark, 
   Gem, 
   CalendarRange,
-  MapPin,
   Route
 } from "lucide-react";
-
-const features = [
-  {
-    icon: Users,
-    title: "Customer Management",
-    description: "Complete customer profiles with KYC documents, contact history, and loan records. Easily search, filter, and manage your entire customer base.",
-    color: "from-blue-500 to-cyan-500",
-  },
-  {
-    icon: Calendar,
-    title: "Daily Loan Management",
-    description: "Handle daily collection loans with precision. Built-in route tracking ensures your staff visits every customer efficiently.",
-    color: "from-emerald-500 to-teal-500",
-    badge: "Route Tracking",
-  },
-  {
-    icon: CalendarDays,
-    title: "Weekly Loan Management",
-    description: "Manage weekly repayment schedules with automated reminders and route optimization for field agents.",
-    color: "from-orange-500 to-amber-500",
-    badge: "Route Tracking",
-  },
-  {
-    icon: Landmark,
-    title: "EMI Based Loans",
-    description: "Calculate EMI schedules, track payments, and manage long-term loans with comprehensive amortization tables.",
-    color: "from-violet-500 to-purple-500",
-  },
-  {
-    icon: Gem,
-    title: "Gold Loan Management",
-    description: "Specialized module for gold loans with item valuation, secure storage tracking, and release management.",
-    color: "from-yellow-500 to-orange-500",
-  },
-  {
-    icon: CalendarRange,
-    title: "Monthly Loan Management",
-    description: "Handle monthly installment loans with flexible terms, interest calculations, and payment scheduling.",
-    color: "from-rose-500 to-pink-500",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Features = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      icon: Users,
+      title: t('features.customerManagement.title'),
+      description: t('features.customerManagement.description'),
+      color: "from-blue-500 to-cyan-500",
+    },
+    {
+      icon: Calendar,
+      title: t('features.dailyLoan.title'),
+      description: t('features.dailyLoan.description'),
+      color: "from-emerald-500 to-teal-500",
+      badge: t('features.routeTracking'),
+    },
+    {
+      icon: CalendarDays,
+      title: t('features.weeklyLoan.title'),
+      description: t('features.weeklyLoan.description'),
+      color: "from-orange-500 to-amber-500",
+      badge: t('features.routeTracking'),
+    },
+    {
+      icon: Landmark,
+      title: t('features.emiLoan.title'),
+      description: t('features.emiLoan.description'),
+      color: "from-violet-500 to-purple-500",
+    },
+    {
+      icon: Gem,
+      title: t('features.goldLoan.title'),
+      description: t('features.goldLoan.description'),
+      color: "from-yellow-500 to-orange-500",
+    },
+    {
+      icon: CalendarRange,
+      title: t('features.monthlyLoan.title'),
+      description: t('features.monthlyLoan.description'),
+      color: "from-rose-500 to-pink-500",
+    },
+  ];
+
   return (
     <section id="loans" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
-            Loan Types
+            {t('features.badge')}
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Manage All Your <span className="text-gradient">Loan Products</span>
+            {t('features.title1')} <span className="text-gradient">{t('features.title2')}</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            From daily collections to gold loans, handle all your lending products with specialized tools designed for each loan type.
+            {t('features.description')}
           </p>
         </div>
 
