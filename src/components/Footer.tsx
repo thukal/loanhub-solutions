@@ -1,6 +1,9 @@
 import { TrendingUp } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-primary py-12">
       <div className="container mx-auto px-6">
@@ -14,44 +17,44 @@ const Footer = () => {
               <span className="text-xl font-bold text-secondary">Loan.App</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Complete loan management system customized for your lending business.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold text-primary-foreground mb-4">Product</h4>
+            <h4 className="font-semibold text-primary-foreground mb-4">{t('footer.product')}</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Features</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Pricing</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Integrations</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">API</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.features')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.loanTypes')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.staffTools')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.mobileApp')}</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-primary-foreground mb-4">Company</h4>
+            <h4 className="font-semibold text-primary-foreground mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">About</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Blog</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Careers</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Contact</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.aboutUs')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.blog')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.careers')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.contact')}</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-primary-foreground mb-4">Legal</h4>
+            <h4 className="font-semibold text-primary-foreground mb-4">{t('footer.legal')}</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Privacy Policy</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Terms of Service</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Security</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.privacy')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.terms')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">{t('footer.security')}</a></li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-border/20 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2024 Loan.App. All rights reserved.
+            {t('footer.copyright')}
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">Twitter</a>

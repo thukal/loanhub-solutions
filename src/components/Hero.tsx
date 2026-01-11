@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, Shield, TrendingUp } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen bg-hero overflow-hidden">
       {/* Background decorative elements */}
@@ -25,10 +29,11 @@ const Hero = () => {
               <span className="text-xl font-bold text-secondary">Loan.App</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#features" className="text-muted-foreground hover:text-secondary transition-colors">Features</a>
-              <a href="#loans" className="text-muted-foreground hover:text-secondary transition-colors">Loan Types</a>
-              <a href="#staff" className="text-muted-foreground hover:text-secondary transition-colors">For Staff</a>
-              <Button variant="hero" size="sm">Book a Demo</Button>
+              <a href="#features" className="text-muted-foreground hover:text-secondary transition-colors">{t('nav.features')}</a>
+              <a href="#loans" className="text-muted-foreground hover:text-secondary transition-colors">{t('nav.loanTypes')}</a>
+              <a href="#staff" className="text-muted-foreground hover:text-secondary transition-colors">{t('nav.forStaff')}</a>
+              <LanguageSelector />
+              <Button variant="hero" size="sm">{t('nav.bookDemo')}</Button>
             </div>
           </div>
         </nav>
@@ -38,24 +43,24 @@ const Hero = () => {
           <div className="animate-fade-up">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-medium mb-8">
               <Shield className="w-4 h-4" />
-              Your Complete Lending Operations Platform
+              {t('hero.badge')}
             </span>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 animate-fade-up-delay-1">
-            <span className="text-primary-foreground">Complete </span>
-            <span className="text-gradient">Loan Management</span>
+            <span className="text-primary-foreground">{t('hero.title1')} </span>
+            <span className="text-gradient">{t('hero.title2')}</span>
             <br />
-            <span className="text-primary-foreground">System</span>
+            <span className="text-primary-foreground">{t('hero.title3')}</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delay-2">
-            Streamline your lending operations with our comprehensive platform. Manage your customers, track collection routes, handle multiple loan types, and monitor staff expenses—all in one powerful system.
+            {t('hero.description')}
           </p>
 
           <div className="flex items-center justify-center animate-fade-up-delay-3">
             <Button variant="hero" size="xl">
-              Book a Demo
+              {t('nav.bookDemo')}
               <ArrowRight className="w-5 h-5" />
             </Button>
           </div>
@@ -63,16 +68,16 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-muted/10">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">6+</div>
-              <div className="text-sm text-muted-foreground">Loan Types</div>
+              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">{t('hero.stat1Value')}</div>
+              <div className="text-sm text-muted-foreground">{t('hero.stat1Label')}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">Real-time</div>
-              <div className="text-sm text-muted-foreground">Route Tracking</div>
+              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">{t('hero.stat2Value')}</div>
+              <div className="text-sm text-muted-foreground">{t('hero.stat2Label')}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">100%</div>
-              <div className="text-sm text-muted-foreground">Customizable</div>
+              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">{t('hero.stat3Value')}</div>
+              <div className="text-sm text-muted-foreground">{t('hero.stat3Label')}</div>
             </div>
           </div>
         </div>

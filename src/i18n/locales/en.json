@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "features": "Features",
+    "loanTypes": "Loan Types",
+    "forStaff": "For Staff",
+    "bookDemo": "Book a Demo"
+  },
+  "hero": {
+    "badge": "Your Complete Lending Operations Platform",
+    "title1": "Complete",
+    "title2": "Loan Management",
+    "title3": "System",
+    "description": "Streamline your lending operations with our comprehensive platform. Manage your customers, track collection routes, handle multiple loan types, and monitor staff expenses—all in one powerful system.",
+    "stat1Value": "6+",
+    "stat1Label": "Loan Types",
+    "stat2Value": "Real-time",
+    "stat2Label": "Route Tracking",
+    "stat3Value": "100%",
+    "stat3Label": "Customizable"
+  },
+  "features": {
+    "badge": "Loan Types",
+    "title1": "Manage All Your",
+    "title2": "Loan Products",
+    "description": "From daily collections to gold loans, handle all your lending products with specialized tools designed for each loan type.",
+    "routeTracking": "Route Tracking",
+    "customerManagement": {
+      "title": "Customer Management",
+      "description": "Complete customer profiles with KYC documents, contact history, and loan records. Easily search, filter, and manage your entire customer base."
+    },
+    "dailyLoan": {
+      "title": "Daily Loan Management",
+      "description": "Handle daily collection loans with precision. Built-in route tracking ensures your staff visits every customer efficiently."
+    },
+    "weeklyLoan": {
+      "title": "Weekly Loan Management",
+      "description": "Manage weekly repayment schedules with automated reminders and route optimization for field agents."
+    },
+    "emiLoan": {
+      "title": "EMI Based Loans",
+      "description": "Calculate EMI schedules, track payments, and manage long-term loans with comprehensive amortization tables."
+    },
+    "goldLoan": {
+      "title": "Gold Loan Management",
+      "description": "Specialized module for gold loans with item valuation, secure storage tracking, and release management."
+    },
+    "monthlyLoan": {
+      "title": "Monthly Loan Management",
+      "description": "Handle monthly installment loans with flexible terms, interest calculations, and payment scheduling."
+    }
+  },
+  "staff": {
+    "badge": "For Your Team",
+    "title1": "Empower Your",
+    "title2": "Staff",
+    "description": "Give your team the tools they need to manage customers, track expenses, and achieve targets efficiently. Everything they need, right at their fingertips.",
+    "feature1": "Mobile app for field agents",
+    "feature2": "Live staff location tracking",
+    "feature3": "Staff expense tracking & reimbursements",
+    "feature4": "Real-time sync & offline support",
+    "feature5": "Role-based access control",
+    "exploreBtn": "Explore Staff Features",
+    "createLoans": {
+      "title": "Create & Manage Loans",
+      "description": "Staff can easily create new loans, update existing ones, and manage the complete loan lifecycle."
+    },
+    "expenseTracking": {
+      "title": "Expense Tracking",
+      "description": "Track daily expenses, travel costs, and reimbursements with receipt uploads and approval workflows."
+    },
+    "routeOptimization": {
+      "title": "Route Optimization",
+      "description": "Intelligent route planning for daily and weekly collections to maximize efficiency."
+    },
+    "performanceDashboard": {
+      "title": "Performance Dashboard",
+      "description": "Real-time metrics on collections, targets, and performance for staff and managers."
+    },
+    "attendanceTime": {
+      "title": "Attendance & Time",
+      "description": "Track staff attendance, field visits, and time spent with comprehensive reports."
+    },
+    "commissionManagement": {
+      "title": "Commission Management",
+      "description": "Automated commission calculations based on collections and new customer acquisition."
+    }
+  },
+  "cta": {
+    "title1": "Ready to Streamline Your",
+    "title2": "Lending Operations?",
+    "description": "Take control of your loan management with Loan.App. Customized to fit your business needs, from customer onboarding to daily collections."
+  },
+  "footer": {
+    "description": "Complete loan management system customized for your lending business.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "features": "Features",
+    "loanTypes": "Loan Types",
+    "staffTools": "Staff Tools",
+    "mobileApp": "Mobile App",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "careers": "Careers",
+    "blog": "Blog",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "security": "Security",
+    "copyright": "© 2024 Loan.App. All rights reserved."
+  }
+}

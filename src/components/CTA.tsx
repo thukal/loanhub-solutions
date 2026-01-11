@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const CTA = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-24 bg-hero relative overflow-hidden">
       {/* Background decorative elements */}
@@ -12,16 +15,16 @@ const CTA = () => {
       <div className="relative container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            <span className="text-primary-foreground">Ready to Streamline Your </span>
-            <span className="text-gradient">Lending Operations?</span>
+            <span className="text-primary-foreground">{t('cta.title1')} </span>
+            <span className="text-gradient">{t('cta.title2')}</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Take control of your loan management with Loan.App. Customized to fit your business needs, from customer onboarding to daily collections.
+            {t('cta.description')}
           </p>
 
           <div className="flex items-center justify-center mb-12">
             <Button variant="hero" size="xl">
-              Book a Demo
+              {t('nav.bookDemo')}
               <ArrowRight className="w-5 h-5" />
             </Button>
           </div>
@@ -31,9 +34,9 @@ const CTA = () => {
               <Phone className="w-5 h-5" />
               <span>+91 123 456 7890</span>
             </a>
-            <a href="mailto:hello@loanpro.com" className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors">
+            <a href="mailto:hello@loan.app" className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors">
               <Mail className="w-5 h-5" />
-              <span>hello@loanpro.com</span>
+              <span>hello@loan.app</span>
             </a>
           </div>
         </div>
