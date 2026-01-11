@@ -60,7 +60,7 @@ const StaffSection = () => {
             </p>
 
             <div className="space-y-4 mb-8">
-              {["Mobile app for field agents", "Real-time sync & offline support", "Role-based access control"].map((item) => (
+              {["Mobile app for field agents", "Live staff location tracking", "Real-time sync & offline support", "Role-based access control"].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center">
                     <CheckCircle2 className="w-4 h-4 text-secondary" />
