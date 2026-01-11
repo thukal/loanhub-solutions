@@ -55,49 +55,49 @@ const StaffSection = () => {
   ];
 
   return (
-    <section id="staff" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="staff" className="py-12 sm:py-16 md:py-24 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left content */}
-          <div>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
+          <div className="text-center lg:text-left">
+            <span className="inline-block px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-secondary/10 text-secondary text-xs sm:text-sm font-medium mb-3 sm:mb-4">
               {t('staff.badge')}
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
               {t('staff.title1')} <span className="text-gradient">{t('staff.title2')}</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8">
               {t('staff.description')}
             </p>
 
-            <div className="space-y-4 mb-8">
+            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
               {featureList.map((item) => (
-                <div key={item} className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center">
-                    <CheckCircle2 className="w-4 h-4 text-secondary" />
+                <div key={item} className="flex items-center gap-2 sm:gap-3 justify-center lg:justify-start">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-secondary" />
                   </div>
-                  <span className="text-foreground font-medium">{item}</span>
+                  <span className="text-sm sm:text-base text-foreground font-medium">{item}</span>
                 </div>
               ))}
             </div>
 
-            <Button variant="hero" size="lg">
+            <Button variant="hero" size="default" className="w-full sm:w-auto">
               {t('staff.exploreBtn')}
             </Button>
           </div>
 
           {/* Right grid */}
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {staffFeatures.map((feature) => (
               <div
                 key={feature.title}
-                className="bg-card rounded-xl p-6 shadow-card border border-border/50 hover:border-secondary/30 hover:shadow-card-hover transition-all duration-300"
+                className="bg-card rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-card border border-border/50 hover:border-secondary/30 hover:shadow-card-hover transition-all duration-300"
               >
-                <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center mb-4">
-                  <feature.icon className="w-5 h-5 text-primary-foreground" />
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-md sm:rounded-lg bg-primary flex items-center justify-center mb-3 sm:mb-4">
+                  <feature.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground" />
                 </div>
-                <h4 className="font-semibold text-foreground mb-2">{feature.title}</h4>
-                <p className="text-sm text-muted-foreground">{feature.description}</p>
+                <h4 className="text-sm sm:text-base font-semibold text-foreground mb-1 sm:mb-2">{feature.title}</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground">{feature.description}</p>
               </div>
             ))}
           </div>
