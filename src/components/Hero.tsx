@@ -28,7 +28,7 @@ const Hero = () => {
               <a href="#features" className="text-muted-foreground hover:text-secondary transition-colors">Features</a>
               <a href="#loans" className="text-muted-foreground hover:text-secondary transition-colors">Loan Types</a>
               <a href="#staff" className="text-muted-foreground hover:text-secondary transition-colors">For Staff</a>
-              <Button variant="hero" size="sm">Get Started</Button>
+              <Button variant="hero" size="sm">Book a Demo</Button>
             </div>
           </div>
         </nav>
@@ -55,11 +55,11 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">
             <Button variant="hero" size="xl">
-              Get Started
+              Book a Demo
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button variant="heroOutline" size="xl">
-              Book a Demo
+              Contact Us
             </Button>
           </div>
 
