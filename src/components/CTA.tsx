@@ -19,13 +19,10 @@ const CTA = () => {
             Take control of your loan management with Loan.App. Customized to fit your business needs, from customer onboarding to daily collections.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <div className="flex items-center justify-center mb-12">
             <Button variant="hero" size="xl">
               Book a Demo
               <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="heroOutline" size="xl">
-              Contact Us
             </Button>
           </div>
 
