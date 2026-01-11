@@ -53,13 +53,10 @@ const Hero = () => {
             Streamline your lending operations with our comprehensive platform. Manage your customers, track collection routes, handle multiple loan types, and monitor staff expenses—all in one powerful system.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">
+          <div className="flex items-center justify-center animate-fade-up-delay-3">
             <Button variant="hero" size="xl">
               Book a Demo
               <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="heroOutline" size="xl">
-              Contact Us
             </Button>
           </div>
 
