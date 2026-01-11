@@ -3,7 +3,9 @@ import { initReactI18next } from 'react-i18next';
 import en from './locales/en.json';
 import ta from './locales/ta.json';
 
-const savedLanguage = localStorage.getItem('language') || 'en';
+const savedLanguage = typeof window !== 'undefined' 
+  ? localStorage.getItem('language') || 'en' 
+  : 'en';
 
 i18n
   .use(initReactI18next)
